@@ -80,21 +80,39 @@ O app fica em [appmobile/](appmobile/). Abra o projeto no Android Studio, config
 
 ## Capturas de tela
 
-![Tela inicial](prints/Tela%20inicial.png)
-Tela principal do app com a lista de alunos e acesso rapido as acoes.
+<p align="center">
+	<img src="prints/Tela%20inicial.png" alt="Tela inicial">
+	<br>
+	<em>Tela principal do app com a lista de alunos e acesso rapido as acoes.</em>
+</p>
 
-![Criar aluno](prints/Criar%20aluno.png)
-Formulario de cadastro de aluno com os campos obrigatorios.
+<p align="center">
+	<img src="prints/Criar%20aluno.png" alt="Criar aluno">
+	<br>
+	<em>Formulario de cadastro de aluno com os campos obrigatorios.</em>
+</p>
 
-![Aluno criado](prints/Aluno%20criado.png)
-Confirmacao do aluno criado e exibicao na lista.
+<p align="center">
+	<img src="prints/Aluno%20criado.png" alt="Aluno criado">
+	<br>
+	<em>Confirmacao do aluno criado e exibicao na lista.</em>
+</p>
 
-![Editar aluno](prints/Editar%20aluno.png)
-Tela de edicao para atualizar os dados do aluno.
+<p align="center">
+	<img src="prints/Editar%20aluno.png" alt="Editar aluno">
+	<br>
+	<em>Tela de edicao para atualizar os dados do aluno.</em>
+</p>
 
-![Swagger](prints/Print%20swagger.png)
-Documentacao da API no Swagger, com endpoints e testes.
+<p align="center">
+	<img src="prints/Print%20swagger.png" alt="Swagger">
+	<br>
+	<em>Documentacao da API no Swagger, com endpoints e testes.</em>
+</p>
 
-![MySQL](prints/Print%20mysql.png)
-Banco MySQL no Workbench com a tabela de alunos persistida.
+<p align="center">
+	<img src="prints/Print%20mysql.png" alt="MySQL">
+	<br>
+	<em>Banco MySQL no Workbench com a tabela de alunos persistida.</em>
+</p>
 
