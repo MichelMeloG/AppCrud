@@ -81,14 +81,20 @@ O app fica em [appmobile/](appmobile/). Abra o projeto no Android Studio, config
 ## Capturas de tela
 
 ![Tela inicial](prints/Tela%20inicial.png)
+Tela principal do app com a lista de alunos e acesso rapido as acoes.
 
 ![Criar aluno](prints/Criar%20aluno.png)
+Formulario de cadastro de aluno com os campos obrigatorios.
 
 ![Aluno criado](prints/Aluno%20criado.png)
+Confirmacao do aluno criado e exibicao na lista.
 
 ![Editar aluno](prints/Editar%20aluno.png)
+Tela de edicao para atualizar os dados do aluno.
 
 ![Swagger](prints/Print%20swagger.png)
+Documentacao da API no Swagger, com endpoints e testes.
 
 ![MySQL](prints/Print%20mysql.png)
+Banco MySQL no Workbench com a tabela de alunos persistida.
 
