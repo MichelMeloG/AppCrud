@@ -1,12 +1,23 @@
-# AppCrud-fastapi
+# AppCrud
 
-API REST para cadastro de alunos usando FastAPI + SQLAlchemy.
+Projeto de CRUD de alunos com backend em FastAPI + SQLAlchemy e app Android.
 
-## Requisitos
+## Visao geral
 
-- Python 3.11+
+- Cadastro completo de alunos (criar, listar, editar, remover).
+- API REST documentada via Swagger.
+- App Android consumindo a API.
 
-## Instalacao
+## Estrutura do repositorio
+
+- Backend (FastAPI): [app/](app/)
+- Dependencias: [requirements.txt](requirements.txt)
+- App Android: [../appmobile/](../appmobile/)
+- Capturas de tela: [../prints/](../prints/)
+
+## Como executar a API localmente
+
+Requisitos: Python 3.11+
 
 ```bash
 python -m venv .venv
@@ -14,19 +25,47 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Executar localmente
-
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Acesse a documentacao em: http://127.0.0.1:8000/docs
+Se estiver usando Python 3.14, use Python 3.12 para evitar problemas de compatibilidade com dependencias nativas.
+
+Documentacao da API (Swagger): http://127.0.0.1:8000/docs
 
 ## Variaveis de ambiente
 
-- `DATABASE_URL`: URL do banco Postgres (Railway injeta automaticamente). Em local, se nao informar, usa SQLite em `./app.db`.
+- `DATABASE_URL`: URL do banco. Em local, se nao informar, usa SQLite em `./app.db`.
 
-## Endpoints
+### MySQL local (PyMySQL)
+
+Exemplo de `DATABASE_URL`:
+
+```bash
+mysql+pymysql://usuario:senha@localhost:3306/nome_do_banco
+```
+
+Defina a variavel antes de iniciar a API.
+
+PowerShell:
+
+```powershell
+$env:DATABASE_URL = "mysql+pymysql://usuario:senha@localhost:3306/nome_do_banco"
+```
+
+CMD:
+
+```bat
+set DATABASE_URL=mysql+pymysql://usuario:senha@localhost:3306/nome_do_banco
+```
+
+### MySQL Workbench (local)
+
+1. Crie o schema no MySQL Workbench.
+2. Atualize o `DATABASE_URL` com usuario, senha, host e o schema criado.
+3. Inicie a API e valide em `/docs`.
+
+## Endpoints principais
 
 - `POST /alunos/`
 - `GET /alunos/`
@@ -34,16 +73,21 @@ Acesse a documentacao em: http://127.0.0.1:8000/docs
 - `PUT /alunos/{matricula}`
 - `DELETE /alunos/{matricula}`
 
-## Deploy no Railway (Nixpacks)
+## App Android
 
-1. Suba o repo para GitHub/GitLab.
-2. Railway: New Project -> Deploy from GitHub -> selecione o repo.
-3. Adicione um Postgres: New -> Database -> PostgreSQL.
-4. Garanta a variavel `DATABASE_URL` (Railway cria automaticamente ao adicionar o Postgres).
-5. Start command recomendado:
+O app fica em [../appmobile/](../appmobile/). Abra o projeto no Android Studio, configure o endereco da API se necessario e execute no emulador ou dispositivo.
 
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port $PORT
-```
+## Capturas de tela
 
-Depois do deploy, acesse `/docs` na URL publica.
+![Tela inicial](../prints/Tela%20inicial.png)
+
+![Criar aluno](../prints/Criar%20aluno.png)
+
+![Aluno criado](../prints/Aluno%20criado.png)
+
+![Editar aluno](../prints/Editar%20aluno.png)
+
+![Swagger](../prints/Print%20swagger.png)
+
+![MySQL](../prints/Print%20mysql.png)
+
