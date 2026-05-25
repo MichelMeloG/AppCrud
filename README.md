@@ -10,16 +10,17 @@ Projeto de CRUD de alunos com backend em FastAPI + SQLAlchemy e app Android.
 
 ## Estrutura do repositorio
 
-- Backend (FastAPI): [app/](app/)
-- Dependencias: [requirements.txt](requirements.txt)
-- App Android: [../appmobile/](../appmobile/)
-- Capturas de tela: [../prints/](../prints/)
+- Backend (FastAPI): [AppCrud-fastapi/app/](AppCrud-fastapi/app/)
+- Dependencias (API): [AppCrud-fastapi/requirements.txt](AppCrud-fastapi/requirements.txt)
+- App Android: [appmobile/](appmobile/)
+- Capturas de tela: [prints/](prints/)
 
 ## Como executar a API localmente
 
 Requisitos: Python 3.11+
 
 ```bash
+cd AppCrud-fastapi
 python -m venv .venv
 .venv\\Scripts\\activate
 pip install -r requirements.txt
@@ -75,19 +76,19 @@ set DATABASE_URL=mysql+pymysql://usuario:senha@localhost:3306/nome_do_banco
 
 ## App Android
 
-O app fica em [../appmobile/](../appmobile/). Abra o projeto no Android Studio, configure o endereco da API se necessario e execute no emulador ou dispositivo.
+O app fica em [appmobile/](appmobile/). Abra o projeto no Android Studio, configure o endereco da API se necessario e execute no emulador ou dispositivo.
 
 ## Capturas de tela
 
-![Tela inicial](../prints/Tela%20inicial.png)
+![Tela inicial](prints/Tela%20inicial.png)
 
-![Criar aluno](../prints/Criar%20aluno.png)
+![Criar aluno](prints/Criar%20aluno.png)
 
-![Aluno criado](../prints/Aluno%20criado.png)
+![Aluno criado](prints/Aluno%20criado.png)
 
-![Editar aluno](../prints/Editar%20aluno.png)
+![Editar aluno](prints/Editar%20aluno.png)
 
-![Swagger](../prints/Print%20swagger.png)
+![Swagger](prints/Print%20swagger.png)
 
-![MySQL](../prints/Print%20mysql.png)
+![MySQL](prints/Print%20mysql.png)
 
