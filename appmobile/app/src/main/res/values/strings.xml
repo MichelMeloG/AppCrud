@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appmobile</string>
+    <string name="alunos_empty">Nenhum aluno cadastrado</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="matricula">Matricula</string>
+    <string name="nome">Nome</string>
+    <string name="excluir">Excluir</string>
+</resources>
